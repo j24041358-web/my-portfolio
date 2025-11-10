@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn{
+  background-color: #111;
+}
+
+li.dropdown {
+  display:inline-block;
+}
+
+.dropdown-content {
+  display:none;
+  position: absolute;
+  background-color: #f9f9f9;
+  mid-width:160px;
+  box-shadow: 0px 8px 18px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+div {
+  width: 30%;
+  border-radius:12px;
+  display: inline-block;
+}
+a[type=buy]:link, a[type=buy]:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  border-radius:7px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a[type=buy]:hover, a[type=buy]:active {
+  background-color: aquamarine;
+  color: white;
+}
+
+</style>
+</head>
+<title>Products/Laptop</title>
+
+<h1 style="color:white;font-size:70px;">Laptop</h1>
+
+<body>
+<body style="background-color:#00356B;">
+<ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li class="dropdown">
+   <a href="#products" class="dropbtn">Products</a>
+   <div class="dropdown-content">
+      <a href="test.html">Laptop</a>
+      <a href="desktop.html">Desktop</a>
+      <a href="accessories.html">Gaming Accessories</a>
+  </li>
+  <li><a href="about.html">About</a></li>
+</ul><br>
+
+
+  <div style="background-color:#FFF4A3;">\
+    <center>
+    <h2> The "Note"</h2>
+    <img src="note.jpg" alt="note" style="width:200px;">
+    
+    <p style="font-size:20px;">
+        Suitable for student and office worker.<br>
+        Lightweight, high mobility, foldable.<br>
+        Interactive screen, with pen feature.</p>
+    
+    <a href="Register form.html" target="_blank" type="buy">Buy!</a><br><br>
+    </center>
+  </div>
+  
+  <div style="background-color:#FFC0C7;">
+    <center>
+    <h2> The "Chill"</h2>
+    <img src="fly.jpg" alt="fly" style="width:300px;">
+    
+    <p style="font-size:20px;">
+        Suitable for lightweight work, light gamers.<br>
+        Chic look suitable for every outfit and occassion.<br>
+       </p>
+    
+    <a href="Register form.html" target="_blank" type="buy">Buy!</a><br><br>
+    </center>
+  </div>
+  
+  <div style="background-color:#D9EEE1;">
+    <center>
+    <h2> The "Fly"</h2>
+    <img src="chill.jpg" alt="chill" style="width:200px;">
+    
+    <p style="font-size:20px;">
+        First choice of Pro-gamers.<br>
+        Best gaming laptop of 2024.<br>
+       </p>
+    
+    <a href="Register form.html" target="_blank" type="buy">Buy!</a><br><br>
+    </center>
+  </div>
+
+</body>
+</html>

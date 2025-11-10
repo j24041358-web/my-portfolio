@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  padding: 12px 20px;
+}
+
+table, th, td {
+  border: 2px solid #ddd;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+th {
+  background-color:#5072A7;
+  color: white;
+}
+td{
+  background-color:#6F8FAF;
+  color: white;
+}
+
+.total {
+   text-align: right;
+   font-weight: bold;
+}
+
+img {
+   max-width: 130px;
+   max-height: 130px;
+}
+img[type=pay] {
+   max-width: 100px;
+   max-height: 50px;
+}
+
+h1{
+   color: white;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 0;
+    border-radius: 4px;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.media {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+.button {
+  width: 90%;
+  background-color:#8FBC8F;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color:#90EE90;
+}
+#notification {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 20px;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#notification:target {
+  display: block;
+}
+.close-btn {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  color: #721c24;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<title>checkout page</title>
+</head>
+<body style="background-color:#004170;">
+<h1 style="font-size:50px;">Your Order</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>ITEM</th>
+      <th>QUANTITY</th>
+      <th>PRICE (RM)</th>
+      <th>TOTAL (RM)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="steeringwheel.jpg" alt="steeringwheel">  Gaming Steering Wheel Simulator</td>
+      <td>1</td>
+      <td>2000.00</td>
+      <td>2000.00</td>
+    </tr>
+    <tr>
+      <td><img src="wirelesskey.jpg" alt="wirelesskey">  The "Friendly Kid"</td>
+      <td>1</td>
+      <td>600.00</td>
+      <td>600.00</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td><b>TOTAL= RM2600.00</b></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 style="color:white;font-family:times new roman">Payment method</h3>
+ <fieldset style="background-color:#B9D9EB;">
+ 
+    <div class="media">
+      <a href="https://tngportal.touchngo.com.my/#login">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Touch_%27n_Go_eWallet_logo.svg/2024px-Touch_%27n_Go_eWallet_logo.svg.png" alt="Touch 'n Go Logo" type="pay" width="90" height="100"></a>
+      <a href="https://www.maybank2u.com.my/home/m2u/common/login.do">
+        <img src="https://cdn.klfoodie.com/2021/02/Maybank-Logo.png" alt="Maybank" type="pay" width="90" height="100"></a>
+      <a href="https://register.grab.com/my/login">
+        <img src="https://seeklogo.com/images/G/grab-logo-7020E74857-seeklogo.com.png" alt="Grabpay" type="pay" width="90" height="100"></a>
+      <a href="https://auth.alipay.com/login/index.htm?goto=https%3A%2F%2Fyebprod.alipay.com%2Fyeb%2Fasset.htm">
+        <img src="https://pic.616pic.com/ys_img/00/03/80/LlGfYpnebC.jpg" alt="Alipay" type="pay"width="90" height="100"></a>
+    </div>
+</fieldset><br>
+
+
+<br>
+<body>
+<center>
+<a href="#notification" id="showNotificationButton" class="button">Pay</a>
+  <div id="notification">Thank You!!!
+     <a href="index.html" class="close-btn">Close</a>
+  </div>
+</center>
+</body>
+</form>
+
+</body>
+
+</html>
