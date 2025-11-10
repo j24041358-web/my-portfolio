@@ -1,0 +1,114 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+      body {
+        background-color: #C1D2D9;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        background-color: #ffffff;
+        padding: 20px ;
+        z-index: 100;
+        text-align: center;
+        font-size: 20px;
+      }
+      nav a {
+        color:#3498db;
+        margin: 0 50px;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 20px ;
+      }
+      nav a:hover {
+        background-color: #2980b9;          
+        color: white;
+        padding: 20px ;
+        z-index: 100;
+      }
+      .contact-form {
+        background: white;
+        padding: 30px;
+        border-radius: 8px;
+        display: block;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        margin: 30px auto;  
+        width: 40%;
+      }
+      h1{
+        text-align: center;
+        font-size: 3rem;
+        font-weight: bold;
+        color: #4F7B80;
+      }
+      input, textarea {
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+      .btn {
+        background-color: #3498db;
+        color: white;
+        border: none;
+        padding: 12px 25px;
+        border-radius: 5px;
+        display: block;  
+        margin: 0 auto;
+      }
+      .btn:hover {
+        background-color: #2980b9;
+      }
+    </style>
+  </head>
+  <body>
+
+  <!-- Navigation Bar -->
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <br><br><br>
+    <div class="contact-form">
+      <form id="contactForm">
+        <h1>Contact Me</h1>
+        <br>
+        <label for="name">Your Name</label><br>
+        <input type="text" id="name" placeholder="Exp: CHEW HUI TING">
+        <label for="phone">Your Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Exp: 6012-3456789">
+        <label for="name">Your Email</label><br>
+        <input type="email" id="email" placeholder="Exp: HT11223344@gmail.com">
+        <label for="name">Your Message</label><br>
+        <textarea id="message" rows="5" placeholder="What do you want to say to me?"></textarea>
+        <button type="button" class="btn" onclick="submitForm()">Submit</button>
+      </form>
+    </div>
+
+    <script>
+      function submitForm() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+
+        if(name === "" || email === "" || message === "") {
+          alert("Please fill in all fields.");
+        } else {
+          alert("Thank you " + name + "! Your message has been received.");
+          document.getElementById("contactForm").reset();
+        }
+      }
+    </script>
+  </body>
+</html>
